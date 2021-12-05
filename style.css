@@ -22,6 +22,7 @@ body.blink {
     filter: grayscale(1);
   }
 }
+
 * {
   text-align: center;
   margin: 0;
@@ -89,6 +90,12 @@ button {
   background-color: rgba(41, 41, 41, 0.5);
   color: white;
   border: none;
+}
+
+img {
+  max-width: 3em;
+  display: inline;
+  margin: 0 auto;
 }
 
 #darkoverlay {
