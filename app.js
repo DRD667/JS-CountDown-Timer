@@ -49,7 +49,7 @@ const countdown = () => {
     document.getElementsByClassName("days")[0].innerText = textDay;
   }
 };
-countdown();
+changeformat();
 setInterval(countdown, 400);
 btn.addEventListener("click", changeformat);
 
