@@ -49,13 +49,12 @@ const countdown = () => {
     document.getElementsByClassName("days")[0].innerText = textDay;
   }
 };
-changeformat();
-setInterval(countdown, 1000);
+countdown();
+setInterval(countdown, 400);
 btn.addEventListener("click", changeformat);
 
 function changeformat() {
   const el = document.getElementsByClassName("container-day")[0];
   el.classList.toggle("dis");
   document.getElementsByClassName("hours")[0].classList.toggle("textHour2");
-  document.body.classList.toggle("blink");
 }
