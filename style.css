@@ -5,7 +5,23 @@ body {
   font-weight: Verdana;
   margin: 0 1rem;
 }
+body.blink {
+  animation: blink 2s linear infinite;
+}
 
+@keyframes blink {
+  49% {
+    filter: grayscale(0);
+  }
+
+  50% {
+    filter: grayscale(1);
+  }
+
+  100% {
+    filter: grayscale(1);
+  }
+}
 * {
   text-align: center;
   margin: 0;
@@ -72,4 +88,11 @@ button {
   background-color: rgba(41, 41, 41, 0.5);
   color: white;
   border: none;
+}
+
+#darkoverlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
 }
