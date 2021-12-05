@@ -1,0 +1,78 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: Verdana;
+  margin: 0 1rem;
+}
+
+* {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.coming-soon {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.countdown {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 50vh;
+  align-items: center;
+  text-align: center;
+  column-gap: 5em;
+  margin: 0 auto;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+  font-size: 5rem;
+  color: yellow;
+  /* border: 2px solid white; */
+}
+
+@media (min-width: 900px) {
+  h3.days {
+    font-size: 15em;
+    color: red;
+  }
+
+  .days ~ * {
+    font-size: 3em;
+  }
+}
+
+.dis,
+.dis ~ .time-info {
+  display: none;
+}
+
+.textHour2 {
+  color: pink;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 2rem 0;
+  display: inline-block;
+  width: 50vh;
+  margin: 0 auto;
+  font-size: 1.5em;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
