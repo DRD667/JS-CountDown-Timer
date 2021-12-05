@@ -21,7 +21,7 @@ const countdown = () => {
     el.classList.toggle("dis");
     // textHour = Math.floor(gap / hour);
   }
-  if (textHour < 10 && textHour2 < 10) {
+  if (textHour < 10) {
     document.getElementsByClassName("hours")[0].innerText = "0" + textHour;
     document.getElementsByClassName("textHour2")[0].innerText = "0" + textHour2;
   } else {
