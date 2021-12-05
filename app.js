@@ -23,7 +23,7 @@ const countdown = () => {
   }
   document.getElementsByClassName("seconds")[0].innerText = textSeconds;
 
-  if (textHour < 10) {
+  if (textHour < 10 && textHour2 < 10) {
     document.getElementsByClassName("hours")[0].innerText = "0" + textHour;
     document.getElementsByClassName("textHour2")[0].innerText = "0" + textHour2;
   } else {
