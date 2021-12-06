@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: Verdana;
@@ -35,7 +35,7 @@ h2 {
   text-align: center;
 }
 
-.coming-soon {
+.sub {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -46,7 +46,7 @@ h2 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  min-height: 50vh;
+  min-height: 55vh;
   align-items: center;
   text-align: center;
   column-gap: 5em;
@@ -60,12 +60,11 @@ h2 {
 .seconds {
   font-size: 5rem;
   color: yellow;
-  /* border: 2px solid white; */
 }
 
 @media (min-width: 900px) {
   h3.days {
-    font-size: 15em;
+    font-size: 13em;
     color: red;
   }
 
