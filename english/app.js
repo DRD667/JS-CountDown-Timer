@@ -1,8 +1,8 @@
 const countdown = () => {
+  const btn = document.getElementsByClassName("changeFormat");
   const countDate = new Date("Dec 11 2021 00:00:00");
   const now = new Date().getTime();
   const gap = countDate - now;
-  const btn = document.getElementsByClassName("changeFormat");
 
   //   Calculating TIme
 

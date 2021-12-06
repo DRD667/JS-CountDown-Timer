@@ -101,17 +101,24 @@ img {
   margin: 0 auto;
 }
 
-button:hover {
-  background-color: rgba(93, 52, 169, 0.5);
-}
 #darkoverlay {
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.2);
   height: 150vh;
   pointer-events: none;
 }
 
 ::-webkit-scrollbar {
   display: none;
+}
+a {
+  display: inline-block;
+  width: 15%;
+  margin: 0 auto;
+}
+
+a:hover {
+  transition: 0.5s ease-in-out;
+  transform: rotate(360deg);
 }

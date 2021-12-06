@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        display: grid;
+        place-content: center;
+        height: 100vh;
+        position: relative;
+      }
+
+      img.rat:after {
+        content: "";
+        position: absolute;
+        width: 120rem;
+        background-color: rgb(230, 217, 217);
+        bottom: 0;
+        height: 2rem;
+        border: 2px solid yellow;
+      }
+
+      img.rat:hover {
+        animation: blast 2s;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes blast {
+        100% {
+          box-shadow: 50vw 0 100vw 0 yellow, -50vw 0 100vw 0 yellow;
+        }
+      }
+
+      ::-webkit-scrollbar {
+        display: none;
+      }
+
+      a img {
+        height: 5em;
+        display: inline-block;
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+      }
+
+      a img:hover {
+        transition: 0.5s ease-in-out;
+        transform: rotate(360deg);
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      class="rat"
+      src="https://img.universitystudent.org/1/4/3098/exams-are-finished-i-have-my-life-back-memes.jpg"
+      alt=""
+    />
+    <div class="pagination">
+      <a href="../english/english.html">
+        <img src="../angle-left-solid.svg" alt="" />
+      </a>
+    </div>
+  </body>
+</html>
