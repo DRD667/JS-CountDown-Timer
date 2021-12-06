@@ -55,6 +55,34 @@
         transition: 0.5s ease-in-out;
         transform: rotate(360deg);
       }
+
+      #loading {
+        position: fixed;
+        top: 45%;
+        left: 45%;
+        border: 5px dotted white;
+        border-left: none;
+        border-radius: 50%;
+        height: 3rem;
+        width: 3rem;
+        animation: load 2s linear;
+        z-index: -1;
+        animation-iteration-count: 3;
+      }
+
+      @keyframes load {
+        50% {
+          border-right: 10px solid yellow;
+          border-top: 10px solid red;
+          border-bottom: 10px solid red;
+        }
+        to {
+          transform: rotate(360deg);
+          border-right: 10px solid yellow;
+          border-top: 10px solid red;
+          border-bottom: 10px solid blue;
+        }
+      }
     </style>
   </head>
   <body>
@@ -63,6 +91,8 @@
       src="https://img.universitystudent.org/1/4/3098/exams-are-finished-i-have-my-life-back-memes.jpg"
       alt=""
     />
+    <div id="loading"></div>
+
     <div class="pagination">
       <a href="../english/english.html">
         <img src="../angle-left-solid.svg" alt="" />

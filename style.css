@@ -93,6 +93,7 @@ button {
   background-color: rgba(41, 41, 41, 0.5);
   color: white;
   border: none;
+  position: relative;
 }
 
 img {
