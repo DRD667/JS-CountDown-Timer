@@ -70,14 +70,11 @@ h2 {
   }
 
   button {
-  position: relative;
-  ]
+    position: relative;
+  }
 
   .days ~ * {
     font-size: 3em;
-  }
-
-  body {
   }
 }
 
