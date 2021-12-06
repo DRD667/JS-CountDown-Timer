@@ -46,7 +46,7 @@ h2 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  height: 50vh;
+  min-height: 50vh;
   align-items: center;
   text-align: center;
   column-gap: 5em;
@@ -69,8 +69,15 @@ h2 {
     color: red;
   }
 
+  button {
+  position: relative;
+  ]
+
   .days ~ * {
     font-size: 3em;
+  }
+
+  body {
   }
 }
 
@@ -80,7 +87,6 @@ h2 {
 }
 
 button {
-  margin-top: 1rem;
   padding: 2rem 0;
   display: inline-block;
   width: 50vh;
@@ -98,10 +104,17 @@ img {
   margin: 0 auto;
 }
 
+button:hover {
+  background-color: rgba(93, 52, 169, 0.5);
+}
 #darkoverlay {
   position: fixed;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.3);
   height: 150vh;
   pointer-events: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
