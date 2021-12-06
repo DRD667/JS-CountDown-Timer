@@ -26,8 +26,6 @@ const countdown = () => {
   if (textHour < 10) {
     document.getElementsByClassName("hours")[0].innerText = "0" + textHour;
     document.getElementsByClassName("textHour2")[0].innerText = "0" + textHour2;
-  } else if (textHour2 > 10) {
-    document.getElementsByClassName("textHour2")[0].innerText = textHour2;
   } else {
     document.getElementsByClassName("hours")[0].innerText = textHour;
     document.getElementsByClassName("textHour2")[0].innerText = textHour2;
