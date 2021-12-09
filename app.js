@@ -30,3 +30,4 @@ function changeformat() {
   el.classList.toggle("dis");
   document.getElementsByClassName("hours")[0].classList.toggle("textHour2");
 }
+};
