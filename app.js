@@ -20,7 +20,7 @@ const countdown = () => {
     const el = document.getElementsByClassName("days")[0];
     el.classList.toggle("dis");
     // textHour = Math.floor(gap / hour);
-  }
+  }};
 changeformat();
 setInterval(countdown, 400);
 btn.addEventListener("click", changeformat);
