@@ -21,36 +21,6 @@ const countdown = () => {
     el.classList.toggle("dis");
     // textHour = Math.floor(gap / hour);
   }
-  document.getElementsByClassName("seconds")[0].innerText = textSeconds;
-
-  if (textHour < 10) {
-    document.getElementsByClassName("hours")[0].innerText = "0" + textHour;
-    document.getElementsByClassName("textHour2")[0].innerText = "0" + textHour2;
-  } else {
-    document.getElementsByClassName("hours")[0].innerText = textHour;
-    document.getElementsByClassName("textHour2")[0].innerText = textHour2;
-  }
-
-  if (textMinutes < 10) {
-    document.getElementsByClassName("minutes")[0].innerText = "0" + textMinutes;
-  } else {
-    document.getElementsByClassName("minutes")[0].innerText = textMinutes;
-  }
-
-  if (textSeconds < 10) {
-    document.getElementsByClassName("seconds")[0].innerText = "0" + textSeconds;
-
-    btn.addEventListener("click", changeformat);
-  } else {
-    document.getElementsByClassName("seconds")[0].innerText = textSeconds;
-  }
-
-  if (textDay < 10) {
-    document.getElementsByClassName("days")[0].innerText = "0" + textDay;
-  } else {
-    document.getElementsByClassName("days")[0].innerText = textDay;
-  }
-};
 changeformat();
 setInterval(countdown, 400);
 btn.addEventListener("click", changeformat);
