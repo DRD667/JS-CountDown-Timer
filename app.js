@@ -16,6 +16,7 @@ const countdown = () => {
   let textHour2 = Math.floor(gap / hour);
   const textMinutes = Math.floor((gap % hour) / minutes);
   const textSeconds = Math.floor((gap % minutes) / seconds);
+<<<<<<< HEAD
 
   document.getElementsByClassName("seconds")[0].innerText = textSeconds;
 
@@ -57,6 +58,13 @@ const countdown = () => {
   }
   cat();
 };
+=======
+  function changeformat() {
+    const el = document.getElementsByClassName("days")[0];
+    el.classList.toggle("dis");
+    // textHour = Math.floor(gap / hour);
+  }};
+>>>>>>> 111ee6b7053e8e433b92cbb89aeec9041f5f2d36
 changeformat();
 var ab = setInterval(countdown, 400);
 btn.addEventListener("click", changeformat);
@@ -66,3 +74,4 @@ function changeformat() {
   el.classList.toggle("dis");
   document.getElementsByClassName("hours")[0].classList.toggle("textHour2");
 }
+};
