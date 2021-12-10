@@ -1,8 +1,8 @@
 const countdown = () => {
+  const btn = document.getElementsByClassName("changeFormat");
   const countDate = new Date("Dec 09 2021 00:00:00");
   const now = new Date().getTime();
   const gap = countDate - now;
-  const btn = document.getElementsByClassName("changeFormat");
 
   //   Calculating TIme
 
@@ -16,11 +16,7 @@ const countdown = () => {
   let textHour2 = Math.floor(gap / hour);
   const textMinutes = Math.floor((gap % hour) / minutes);
   const textSeconds = Math.floor((gap % minutes) / seconds);
-  function changeformat() {
-    const el = document.getElementsByClassName("days")[0];
-    el.classList.toggle("dis");
-    // textHour = Math.floor(gap / hour);
-  }
+
   document.getElementsByClassName("seconds")[0].innerText = textSeconds;
 
   if (textHour < 10) {
@@ -39,8 +35,6 @@ const countdown = () => {
 
   if (textSeconds < 10) {
     document.getElementsByClassName("seconds")[0].innerText = "0" + textSeconds;
-
-    btn.addEventListener("click", changeformat);
   } else {
     document.getElementsByClassName("seconds")[0].innerText = textSeconds;
   }
@@ -50,9 +44,21 @@ const countdown = () => {
   } else {
     document.getElementsByClassName("days")[0].innerText = textDay;
   }
+
+  function cat() {
+    if (gap < 10) {
+      clearInterval(ab);
+
+      var arr = document.getElementsByClassName("chtime");
+      for (let i = 0; i < arr.length; i++) {
+        arr[i].innerText = 0;
+      }
+    }
+  }
+  cat();
 };
 changeformat();
-setInterval(countdown, 400);
+var ab = setInterval(countdown, 400);
 btn.addEventListener("click", changeformat);
 
 function changeformat() {
